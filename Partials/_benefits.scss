@@ -1,0 +1,61 @@
+// Seção de Benefícios
+#benefits {
+  padding: 4rem 1rem;
+  background-color: #f7fafc;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    color: #2d3748;
+    margin-bottom: 2rem;
+    font-weight: bold;
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .benefit-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    .benefit-item {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 1rem;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; /* Centraliza a imagem no item */
+      }
+
+      p {
+        font-size: 1rem;
+        color: #4a5568;
+        margin-top: 0.5rem;
+
+        @media (min-width: 768px) {
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+}

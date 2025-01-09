@@ -1,0 +1,56 @@
+// Seção Explicação do Processo
+#process {
+    padding: 4rem 1rem;
+    background-color: #f7fafc;
+    text-align: center;
+  
+    h2 {
+      font-size: 2rem;
+      color: #2d3748;
+      margin-bottom: 2rem;
+      font-weight: bold;
+  
+      @media (min-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+  
+    ol {
+      margin: 0 auto;
+      padding: 0;
+      max-width: 700px;
+      list-style: none;
+      counter-reset: step;
+  
+      li {
+        position: relative;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: #4a5568;
+        padding-left: 3rem;
+        margin-bottom: 1.5rem;
+  
+        &:before {
+          content: counter(step);
+          counter-increment: step;
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-size: 1.5rem;
+          width: 2rem;
+          height: 2rem;
+          line-height: 2rem;
+          background-color: #4299e1;
+          color: #ffffff;
+          border-radius: 50%;
+          text-align: center;
+          font-weight: bold;
+        }
+  
+        @media (min-width: 768px) {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+  

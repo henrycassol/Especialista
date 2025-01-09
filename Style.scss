@@ -1,0 +1,142 @@
+// Variáveis globais
+$font-primary: 'Roboto', sans-serif;
+$color-primary: #5A67D8; // Azul suave
+$color-secondary: #2D3748; // Cinza escuro
+$color-background: #F7FAFC; // Cinza claro
+$color-text: #1A202C; // Preto suave
+$color-accent: #E53E3E; // Vermelho para botões ou destaques
+
+@import "Partials/hero";
+@import "Partials/about";
+@import "Partials/benefits";
+@import "Partials/contact";
+@import "Partials/faq";
+@import "Partials/footer";
+@import "Partials/process";
+@import "Partials/testimonials";
+
+// Reset básico
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: $font-primary;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $color-background;
+  color: $color-text;
+  line-height: 1.6;
+}
+
+// Links padrão
+a {
+  text-decoration: none;
+  color: $color-primary;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+// Botão padrão
+.btn {
+  display: inline-block;
+  background-color: $color-primary;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  
+  &:hover {
+    background-color: $color-accent;
+    transform: scale(1.05);
+  }
+}
+
+// Estrutura de layout geral
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+// Estilização de títulos
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: $color-primary;
+}
+
+h2 {
+  font-size: 2rem;
+  color: $color-secondary;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+// Estilização de parágrafos
+p {
+  margin-bottom: 1rem;
+}
+
+// Formulários
+input, textarea, button {
+  font-family: $font-primary;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid $color-secondary;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: $color-primary;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+// Imagens
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
+// Rodapé
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: $color-secondary;
+  color: #fff;
+
+  a {
+    color: #fff;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
