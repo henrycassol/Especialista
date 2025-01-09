@@ -157,65 +157,71 @@
 
 #contact {
   padding: 4rem 1rem;
-  background-color: #edf2f7;
+  background-color: #ffffff;
   text-align: center;
 }
 #contact h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #2d3748;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: bold;
 }
 @media (min-width: 768px) {
   #contact h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
-#contact form {
+#contact p {
+  font-size: 1.2rem;
+  color: #4a5568;
+  margin-bottom: 2rem;
   max-width: 600px;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  #contact p {
+    font-size: 1.5rem;
+  }
+}
+#contact .contact-card {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
-#contact form input,
-#contact form textarea {
-  width: 100%;
-  padding: 1rem;
-  font-size: 1rem;
-  border: 1px solid #cbd5e0;
-  border-radius: 5px;
-  background-color: #ffffff;
-  color: #4a5568;
-  font-family: "Roboto", sans-serif;
+#contact .contact-card img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
-#contact form input:focus,
-#contact form textarea:focus {
-  outline: none;
-  border-color: #4299e1;
-  box-shadow: 0 0 5px rgba(66, 153, 225, 0.5);
-}
-#contact form textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-#contact form button {
-  padding: 1rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #ffffff;
+#contact .contact-card .contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   background-color: #4299e1;
-  border: none;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
-#contact form button:hover {
+#contact .contact-card .contact-button:hover {
   background-color: #2b6cb0;
+  transform: scale(1.05);
 }
-#contact form button:focus {
+#contact .contact-card .contact-button:focus {
   outline: none;
   box-shadow: 0 0 5px rgba(66, 153, 225, 0.5);
+}
+#contact .contact-card .contact-button span {
+  font-size: 1.6rem;
 }
 
 #faq {

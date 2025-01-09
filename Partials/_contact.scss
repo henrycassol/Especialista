@@ -1,40 +1,58 @@
 #contact {
   padding: 4rem 1rem;
-  background-color: #edf2f7;
+  background-color: #ffffff;
   text-align: center;
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #2d3748;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-weight: bold;
 
     @media (min-width: 768px) {
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
   }
 
-  .contact-button {
+  p {
+    font-size: 1.2rem;
+    color: #4a5568;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .contact-card {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    justify-content: center;
+    gap: 2rem;
 
     img {
-      max-width: 150px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
+      object-fit: cover;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
     }
 
-    .contact-link {
-      display: inline-block;
-      padding: 1rem 2rem;
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #ffffff;
+    .contact-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
       background-color: #4299e1;
-      border-radius: 5px;
+      color: #ffffff;
       text-decoration: none;
+      padding: 1rem 2rem;
+      font-size: 1.4rem;
+      font-weight: bold;
+      border-radius: 5px;
       transition: background-color 0.3s ease, transform 0.2s ease;
 
       &:hover {
@@ -45,6 +63,10 @@
       &:focus {
         outline: none;
         box-shadow: 0 0 5px rgba(66, 153, 225, 0.5);
+      }
+
+      span {
+        font-size: 1.6rem;
       }
     }
   }
